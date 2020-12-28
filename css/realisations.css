@@ -1,0 +1,98 @@
+#portfolio_center_realisations
+{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#portfolio_center_realisations h2
+{
+  margin-left: 5%;
+  margin-bottom: 40px;
+  font-size: 1.7em;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+#portfolio_center_realisations > h3
+{
+  text-align: right;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+#portfolio_center_realisations #realisations_articles
+{
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#realisations_articles .realisation_article
+{
+  background-color: #232323;
+  width: 40%;
+  border-radius: 8px;
+  padding: 2%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  transition: 1s;
+  cursor: grab;
+  word-break: break-word;
+}
+#realisations_articles .realisation_article:hover
+{
+  background-color: #161616;
+}
+#realisations_articles .realisation_article h3
+{
+  font-size: 1.4em;
+  border-bottom: 2px solid cyan;
+  color: cyan;
+  margin-bottom: 2%;
+}
+#realisations_articles .realisation_article p
+{
+  margin-left: 2%;
+  padding-top: 1%;
+}
+#realisations_articles .realisation_article .article_proOuPerso
+{
+  color: darkcyan;
+}
+.article_proOuPerso, .article_semestre, .article_duree, .article_objectif, .article_langages, .article_membre, .article_competences
+{
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 4%;
+}
+.article_semestre_rep, .article_duree_rep, .article_membre_rep, .article_objectif_rep, .article_competences_rep, .article_langages_rep
+{
+  color: lightgrey;
+  align-items: center;
+}
+.lienGit
+{
+  margin-top: 10%;
+  display: flex;
+}
+.lienGit a
+{
+  display: flex;
+  align-items: center;
+  color: cyan;
+}
+.lienGit img
+{
+  width: 35px;
+  margin-right: 5px;
+}
+
+
+@media all and (max-width: 1024px)
+{
+  #realisations_articles .realisation_article
+  {
+    width: 84%;
+  }
+  .lienGit
+  {
+    font-size: 0.9em;
+  }
+}

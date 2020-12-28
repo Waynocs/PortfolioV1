@@ -1,0 +1,248 @@
+/* Paramètres globaux */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Verdana;
+  background-image: url("../images/fond.jpg");
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Paramètres globaux du portfolio */
+#portfolio {
+  display: flex;
+}
+
+/* gauche de la page */
+#portfolio_left {
+  width: 25%;
+  background-color: #232323;
+  opacity: 0.7;
+  color: white;
+  font-size: 1em;
+}
+
+#responsive_portfolio_left {
+  display: none;
+}
+
+#photoDeProfile-Infos {
+  width: 80%;
+  margin: 30px auto;
+}
+
+#photoDeProfile-Infos a {
+  color: white;
+  text-decoration: none;
+}
+
+#photoDeProfile-Infos a:hover {
+  color: cyan;
+}
+
+#photoDeProfile img {
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#portfolio_left_infos p,
+#portfolio_left_contacts p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#portfolio_left span {
+  margin-left: 3%;
+  color: silver;
+}
+
+#portfolio_left_infos {
+  width: 90%;
+  margin: auto;
+}
+
+#portfolio_left_contacts,
+#portfolio_left_qualites,
+#portfolio_left_interets {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+#portfolio_left_contacts h3,
+#portfolio_left_qualites h3,
+#portfolio_left_interets h3 {
+  text-align: center;
+  border-bottom: 2px solid darkcyan;
+  margin-bottom: 5%;
+  color: darkcyan;
+}
+
+.portfolio_left_img-span {
+  display: flex;
+  margin: 3%;
+}
+
+.portfolio_left_img-span .portfolio_left_span p {
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.portfolio_left_img-span .portfolio_left_img {
+  min-width: 30px;
+  max-width: 30px;
+}
+
+.portfolio_left_img-span .portfolio_left_img img {
+  width: 100%;
+  background-color: silver;
+  object-fit: contain;
+}
+
+/* centre de la page */
+#portfolio_center {
+  width: 75%;
+  color: white;
+}
+
+#portfolio_center header {
+  padding: 50px;
+  font-family: candara;
+  font-size: 1.8em;
+  background-color: black;
+  opacity: 0.5;
+  color: lightcyan;
+}
+
+#portfolio_center header h1 {
+  color: cyan;
+}
+
+#portfolio_center_page {
+  background-color: #323232;
+  opacity: 0.7;
+}
+
+nav {
+  background-color: black;
+  opacity: 0.7;
+  padding: 5px 0px 0px 5%;
+}
+
+nav #presentation,
+nav #realisations {
+  padding: 5px;
+  display: inline-block;
+  opacity: 1.1;
+  border-top: 3px solid silver;
+  border-left: 3px solid silver;
+  border-right: 3px solid silver;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  outline: none;
+}
+
+nav #presentation {
+  background-color: #202020;
+  cursor: grab;
+  color: darkcyan;
+}
+
+nav #realisations {
+  background-color: #323232;
+  margin-left: 1%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+nav #realisations:hover {
+  background-color: #454545;
+}
+
+footer {
+  padding: 40px 0px 20px 0px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+}
+
+footer h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+footer a {
+  color: cyan;
+  transition: 1s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+
+@media all and (max-width: 1024px) {
+  #portfolio_center header {
+    padding-left: 80px;
+  }
+
+  #portfolio_center {
+    width: 100%;
+    zoom: 0.6;
+  }
+
+  #portfolio_left {
+    width: 60%;
+    display: none;
+    position: absolute;
+    zoom: 0.7;
+    opacity: 1;
+    border-bottom-right-radius: 9px;
+    z-index: 9999;
+  }
+
+  #responsive_portfolio_left {
+    position: absolute;
+    display: block;
+    font-size: 2em;
+    padding: 6px 10px 14px 10px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    left: 0;
+    margin-top: 10px;
+    background-color: silver;
+    color: black;
+    cursor: pointer;
+  }
+
+  footer {
+    zoom: 0.6;
+    padding: 40px;
+  }
+
+  footer h3 {
+    font-size: 1.2em;
+  }
+}

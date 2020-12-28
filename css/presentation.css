@@ -1,0 +1,163 @@
+#portfolio_center_presentation
+{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#portfolio_center_presentation h2
+{
+  margin-left: 5%;
+  margin-bottom: 40px;
+  font-size: 1.7em;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+#presentation_formation, #presentation_experience, #presentation_competences
+{
+  padding-left: 10%;
+}
+#presentation_formation > h3, #presentation_experience > h3, #presentation_competences > h3
+{
+  margin: 20px 0px;
+  font-size: 1.2em;
+  color: cyan;
+  border-bottom: 2px solid cyan;
+  display: inline-block;
+  width: 60%;
+  -webkit-text-stroke: thin;
+}
+#portfolio_center_presentation .presentation_formation_body
+{
+  display: flex;
+}
+#portfolio_center_presentation .presentation_date-infos
+{
+  display: flex;
+}
+#portfolio_center_page .presentation_date
+{
+  width: 15%;
+  margin: 2%;
+}
+#portfolio_center_page .presentation_infos
+{
+  width: 81%;
+  margin: 2%;
+}
+#portfolio_center_page .presentation_date, #portfolio_center_page .presentation_infos p:first-child
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#presentation_programmation-logiciels
+{
+  display: flex;
+}
+#presentation_competences
+{
+  height: 50%;
+}
+#presentation_programmation h3, #presentation_linguistiques h3, #presentation_logiciels h3
+{
+  font-size: 1.1em;
+  margin: 10px 0px;
+}
+#presentation_programmation, #presentation_linguistiques, #presentation_logiciels
+{
+  width: 40%;
+  padding-left: 2%;
+}
+
+.presentation_label-diag
+{
+  display: flex;
+  align-items: center;
+  cursor: help;
+  width: 85%;
+  transition: 0.5s;
+}
+.presentation_label-diag:hover
+{
+  opacity: 0.6;
+  background-color: #232323;
+}
+
+.presentation_label-diag .presentation_label
+{
+  width: 170px;
+}
+.presentation_diag
+{
+  background-color: #161616;
+  min-width: 120px;
+  max-width: 120px;
+  height: 12px;
+  border-radius: 10px;
+}
+.presentation_diag .presentation_diag_prog
+{
+  background-color: cyan;
+  height: 12px;
+  border-radius: 10px;
+}
+.presentation_diag .cent
+{
+  width: 120px;
+}
+.presentation_diag .quatre_vingt
+{
+  width: 96px;
+}
+.presentation_diag .soixante_cinq
+{
+  width: 78px;
+}
+.presentation_diag .soixante
+{
+  width: 72px;
+}
+.presentation_diag .cinquante_cinq
+{
+  width: 66px;
+}
+.presentation_diag .cinquante
+{
+  width: 60px;
+}
+.presentation_diag .quarante
+{
+  width: 48px;
+}
+.presentation_diag .trente
+{
+  width: 36px;
+}
+.presentation_diag .vingt
+{
+  width: 24px;
+}
+
+
+@media all and (max-width: 1024px)
+{
+  .presentation_diag
+  {
+    zoom: 0.8;
+  }
+  #presentation_programmation, #presentation_linguistiques, #presentation_logiciels
+  {
+    width: 46%;
+    padding-left: 1%;
+  }
+  #presentation_formation > h3, #presentation_experience > h3, #presentation_competences > h3
+  {
+    width: 73%;
+  }
+  #portfolio_center_page .presentation_date
+  {
+    width: 25%;
+  }
+  #portfolio_center_page .presentation_infos
+  {
+    width: 71%;
+  }
+}
